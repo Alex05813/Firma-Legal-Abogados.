@@ -46,7 +46,7 @@ const Abogado = () => {
 
   useEffect(() => {
     // Realizando la solicitud GET para obtener los procesos del abogado
-    axios.get('http://localhost:5000/api/procesos')
+    axios.get('http://localhost:9000/api/procesos')
       .then(response => {
         // Filtrando los procesos que corresponden al abogado con el ID dado
         const procesosFiltrados = response.data.filter(proceso => proceso.numeroIdentificacionAbogado === abogadoId);
